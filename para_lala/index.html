@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Lala </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main class="welcome" id="welcome">
+    <h1>Lala</h1>
+    <p>Un pequeño lugar para ti</p>
+
+    <button class="enter-button" id="enterButton">
+        Descubrir
+        <span>♡</span>
+    </button>
+</main>
+
+
+   
+<section class="second-screen" id="secondScreen">
+
+    <p class="letter-intro">HAY ALGO QUE QUIERO MOSTRARTE</p>
+
+    <div class="envelope-container" id="envelope">
+        <div class="envelope">
+            <div class="envelope-back"></div>
+            <div class="letter">
+                
+<div class="letter" id="letter">
+    <div class="letter-content">
+        <h2>Para ti, Lala ♡</h2>
+
+        <p id="letterText"></p>
+
+        <span class="letter-signature">Con cariño, para ti.</span>
+        <div class="final-heart" id="finalHeart">♡</div>
+    </div>
+</div>
+
+            </div>
+            <div class="envelope-front"></div>
+            <div class="envelope-flap"></div>
+            <div class="envelope-heart">♡</div>
+        </div>
+    </div>
+
+    <p class="envelope-hint" id="envelopeHint">
+        Toca el sobre para abrirlo
+    </p>
+
+</section>
+
+
+
+<div class="music-player" id="musicPlayer">
+    <div class="music-info">
+        <span class="music-icon">♫</span>
+        <div>
+            <p class="music-title">Princesa</p>
+            <p class="music-artist">Sosa · Para ti ♡</p>
+        </div>
+        <button id="playPauseButton" class="music-button" aria-label="Pausar música">Ⅱ</button>
+    </div>
+
+    <div class="music-progress">
+        <span id="currentTime">0:10</span>
+        <input type="range" id="musicSeek" min="0" max="100" value="0">
+        <span id="duration">0:00</span>
+    </div>
+
+    <div class="music-volume">
+        <span>♫</span>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.35">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
